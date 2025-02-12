@@ -1,0 +1,38 @@
+p{
+    color:blue;
+    background-color:aqua;
+
+    /*border-top-style:solid;
+    border-right-style:dotted;
+    border-bottom-style:double;
+    border-left-style:dashed;*/
+
+    /*border-top-width:5px;
+    border-right-width:10px;
+    border-bottom-width:20px;
+    border-left-width:40px;*/
+
+    /*border-top-color:green;
+    border-right-color:red;
+    border-bottom-color:purple;
+    border-left-color:black;*/
+
+    /*border-style: solid dotted dashed double;
+    border-width:5px 10px 20px 40px;
+    border-color: blue yellow brown green;*/
+}
+   
+h1{
+    color:red;
+    background-color: beige;
+
+    border-style:solid; /*estilo da borda*/
+    border-width: 5px; /*espessura da borda*/
+    border-color:black; /*cor da borda*/
+
+    border: solid 10px black; /*forma resumida*/
+
+    padding:50px;
+    margin:50px;
+
+}
