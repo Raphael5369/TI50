@@ -30,5 +30,25 @@
             }
         }
     </script>
+
+    <h1>estrutura de repetição</h1>
+    <h2>laço for</h2>
+    <form>
+        <input type="number" id="numero" placeholder="Digite um número">
+        <input type="button" onclick="gerar()" value="Gerar sequência">
+    </form>
+
+    <ul id="sequencia"></ul>
+
+        <script>
+            function gerar(){
+                let limite = document.getElementById('numero').value;
+                let lista = "";
+                for (let i = 1; i <= limite; i++){
+                    lista = lista + "<li>" + i + "</li>";
+                }
+                document.getElementById('sequencia').innerHTML = lista;
+            }
+        </script>
 </body>
 </html>
