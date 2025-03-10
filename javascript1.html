@@ -5,13 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Exemplos de JavaScript</title>
 </head>
-<body>
+<body id="corpo">
     <p id="mensagem">Olá Mundo!</p>
     <button onclick="document.getElementById('mensagem').innerHTML = 'Olá <br>JavaScript!';">Mudar Mensagem</button>
-    <button onclick="document.getElementById('mensagem').innerHTML = 'Olá <br>Mundo!';">Mudar Mensagem</button>
+
+    <h1>Modificando atributos</h1>
+    <button onclick="document.getElementById('lamp').src = 'on.gif';">Liga</button>
+    <img id="lamp" src="off.gif" alt="lâmpada">
+    <button onclick="document.getElementById('lamp').src = 'off.gif';">Desliga</button>
+    
     <script>
-
+        function Tema Escuro(){
+            document.getElementById('corpo').style.backgroundColor = '#222222';
+            document.getElementById('corpo').style.color ='white';
+        }
     </script>
+    
+    <h1>Modificando Formatação</h1>
+    <p id="mensagem2">Olá Mundo!</p>
+    <button onclick="document.getElementById('mensagem2').style.fontSize = '32px';">Aumenta fonte</button>
+    <button onclick="document.getElementById('mensagem2').style.fontSize = '16px';">Diminui fonte</button>
 
+    <hr>
+
+    <button onclick="TemaEscuro()">Tema Escuro</button>
+    
 </body>
 </html>
