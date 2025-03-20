@@ -7,7 +7,7 @@
 </head>
 <body>
     <h1>Formulário</h1>
-    <form action="https://jkorpela.fi/cgi-bin/echo.cgi">
+    <form action="https://jkorpela.fi/cgi-bin/echo.cgi" method="post">
         <fieldset>
             <legend>Dados de Acesso</legend> <!--Título do campo-->
         <label for="nome">*Nome:</label> <!--Rótulo de entrada para campo input-->
@@ -37,6 +37,7 @@
             <br>
             <label for="estado">Estado:</label>
             <select name="estado" id="estado"> <!--Campo de entrada de select-->
+                <option value="">Escolha..</option>
                 <option value="ac">Acre</option>
                 <option value="al">Alagoas</option>
                 <option value="ap">Amapá</option>
@@ -65,8 +66,14 @@
                 <option value="se">Sergipe</option>
                 <option value="to">Tocantins</option>
             </select>
+            <br>
+
+            <label for="mensagem">Mensagem:</label>
+            <textarea name="mensagem" id="mensagem"></textarea> <!--Campo de entrada de textarea-->
 
         </fieldset>
+        
+        <input type="reset"> <!--Botão de limpar formulário-->
         <input type="submit"> <!--Botão de envio de formulário-->
     </form>
 </body>
